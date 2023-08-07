@@ -5,7 +5,7 @@ Preferred Bucket: Backend
 
 ### Starters
 
-<mark>1. Create a private repository named `WebD-Selection-Task-1` on GitHub.</mark>
+1. Create a private repository named `WebD-Selection-Task-1` on GitHub.
 2. Write your Name, Enrollment Number, WhatsApp number, and preferred bucket (Frontend/Backend) in the README.md file of your repo.
 3. Add the following GitHub profiles as collaborators to the repository:
    - atharva-gadekar
