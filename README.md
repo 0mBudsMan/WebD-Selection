@@ -4,6 +4,7 @@
 3. WhatsApp: +91 97237 90910
 4. Preferred Bucket: Backend
 5. All the Completed tasks have been mentioned below for reference
+6. Hosted on https://rainbow-kangaroo-4a2255.netlify.app/
 
 ### Starters (Completed Tasks)
 
