@@ -3,6 +3,7 @@
 2. Enrollment Number: IFI2022018
 3. WhatsApp: +91 97237 90910
 4. Preferred Bucket: Backend
+All the Completed tasks have been mentioned below for reference
 
 ### Starters (Completed Tasks)
 
