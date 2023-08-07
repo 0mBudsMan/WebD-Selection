@@ -1,16 +1,11 @@
-
-
-## Introduction
-
-The Selection Process would involve 3 phases. The students shortlisted in phase 1 **would be split into buckets according to their skillset or interest (frontend or backend) and then given a task for their specific bucket. This task will not be a basic task like Round 1, we would expect you to show your expertise in your skillset, even aspects like documentation will be considered.**
-
-The third phase would be interviews, the details of which would be shared later.
-
-## Phase 1: Deadline - 8/7/23 11:59pm
+Name: Om Buddhadev
+Enrollment Number: IFI2022018
+WhatsApp: +91 97237 90910
+Preferred Bucket: Backend
 
 ### Starters
 
-1. Create a private repository named `WebD-Selection-Task-1` on GitHub.
+<mark>1. Create a private repository named `WebD-Selection-Task-1` on GitHub.</mark>
 2. Write your Name, Enrollment Number, WhatsApp number, and preferred bucket (Frontend/Backend) in the README.md file of your repo.
 3. Add the following GitHub profiles as collaborators to the repository:
    - atharva-gadekar
@@ -42,33 +37,3 @@ You will earn Bonus Points if you complete any or all of the following tasks:
 6. Create a progress bar that tracks the user's completion rate of answered questions. (30 points)
 7. Add a feature that allows users to bookmark questions for later review. The bookmarked questions must be displayed together on a new page/section (40 points)
 8. Allow users to create a new category and add a question under any category. Ensure this information is stored in the browser. (70 points)
-
-API Link: 
-```
-https://test-data-gules.vercel.app/data.json
-```
-
-
-## Rules
-
-1. Deploy your website on GitHub Pages (it is free for students) or any other platform.
-2. Use only vanilla CSS and JavaScript; external frameworks like Bootstrap are not allowed. Also creating a backend or using another API is not allowed.
-3. Your code will be checked for plagiarism, so avoid copying code from others. In cases where significant similarities or direct copying are found, the respective submission will be disqualified from the selection process.
-4. Avoid copying directly from ChatGPT or any other AI. We expect original work from all candidates.
-5. You are encouraged to seek guidance and learn from various web development resources, but ensure that your final submission represents your unique work and creativity.
-
-## Scoring
-
-- Starters: 50 points
-- Main Course - DSA GeekSheet: 200 points
-- Dessert (Optional Tasks): Up to 240 bonus points
-- Code Quality, Responsiveness: Up to 200 points
-
-## Testing
-
-We will test your website using a larger dataset to ensure responsiveness.
-
-## Support
-For any doubts/queries you can add a comment in this [issue](https://github.com/GeekHaven/WebD-Selection-23-24-Task1/issues/1).
-
-00110101 01000001 01001110
