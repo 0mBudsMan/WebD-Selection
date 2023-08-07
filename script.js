@@ -49,8 +49,11 @@ fetchQuestionDetailsJSON().then(listofques => {
     
    
     label.setAttribute('for', tempp);
-    const text = document.createTextNode(user.title);
-    label.appendChild(text);
+    const parag = document.createElement('p');
+    parag.classList.add(tempp)
+    const text = document.createTextNode(temp+". "+user.title);
+    parag.appendChild(text);
+    label.appendChild(parag);
     hone.appendChild(label);
     e1.appendChild(hone);
 
