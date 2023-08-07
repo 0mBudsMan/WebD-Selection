@@ -1,0 +1,187 @@
+/*Primary color is for dark mode, secondary is for light mode*/
+:root{
+  --primary-color-bg: #001e2b;
+  --secondary-color-bg: white;
+  --primary-color-font: white;
+  --secondary-color-font: black;
+  --primary-color-accordion: #353535;
+  --secondary-color-accordion: pink;
+}
+.light{
+  --primary-color-bg: #D9D9D9;
+  --secondary-color-bg: #001e2b;
+  --secondary-color-font: white;
+  --primary-color-font: black;
+  --secondary-color-accordion: steelblue;
+  --primary-color-accordion: #3C6E71;
+}
+
+
+
+body {
+    background-color: var(--primary-color-bg);
+    
+}
+
+header {
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    height: 50px;
+    width: 50px;
+    margin-right: 15px;
+    margin-top: 3px;
+    float: left;
+
+}
+
+.header {
+    float: left;
+
+}
+
+.header-content  {
+    float: left;
+}
+.profile{
+    float: right;
+}
+.midd{
+  text-align: center;
+}
+.rightt{
+    font-family: 'Roboto Mono', monospace;
+    color: var(--primary-color-font);
+    font-size: 15px;
+}
+.title-font {
+    font-family: 'Roboto Mono', monospace;
+    color: var(--primary-color-font);
+    font-size: 25px;
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+}
+
+div.c{
+  position: relative;
+  margin:2em;
+}
+
+.c h1{
+  font-size: 25px;
+}
+.onlyforthis{
+  position: absolute;
+  left: 0;
+  top: 0;
+  
+  width: 100%;
+  opacity:0;
+  visibility: 0;
+}
+.accordion h1{
+  background: var(--primary-color-accordion);
+  color:white;
+  padding:1em;
+  position: relative;
+}
+.accordion .onlyforhis::before{
+  content:"";
+  display: inline-block;
+  border: 15px solid transparent;
+  border-left:20px solid white;
+}
+.accordion .onlyforhis{
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.accordion div.p{
+  max-height:0px;
+  overflow: hidden;
+  transition:max-height 0.5s;
+  background-color: #61677A;
+  box-shadow:0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+.accordion div.p p {
+  padding:2em;
+  
+}
+.accordion input:checked ~ h1 .onlyforhis::before{
+  border-left:15px solid transparent;
+  border-top:20px solid white;
+  margin-top:12px;
+  margin-right:10px;
+}
+.accordion input:checked ~ h1 ~ div.p{
+  max-height:100%;
+  background-color: #61677A;
+}
+.accordion a{
+  color:steelblue;
+}
+
+li input:checked ~ label{
+  background-color: green;
+}
+
+#progressbar{
+  text-align: center;
+  color: var(--primary-color-font);font-family: 'Roboto Mono', monospace; font-size: x-small;
+}
+
+.leest { 
+  font-family: 'Space Mono', monospace; 
+  
+  
+  max-width: 820px;
+  padding: 32px;
+  margin: 6px auto;
+  
+  
+}
+
+
+
+ol { padding-left: 50px; }
+ul { 
+  color: #4F4F4F; 
+  
+  margin-top: 24px;
+  margin-bottom: 10px;
+  position: relative;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  
+  
+}
+ul p{
+  color: black ;
+
+}
+.centerbring{text-align: center; margin-bottom: 50px;}
+strong { color: #001e2b; }
+
+hr{
+  color: #001e2b;
+}
+.strongg{
+  font-family: 'Roboto Mono', monospace;
+}
+.stronger{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 40px;
+ 
+}
+.instruction{
+  color: var(--primary-color-font);
+}
