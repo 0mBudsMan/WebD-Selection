@@ -4,6 +4,7 @@
 3. WhatsApp: +91 97237 90910
 4. Preferred Bucket: Backend
 5. All the Completed tasks have been mentioned below for reference
+6. I've also added a short textual go-through of my website at the end. Kindly have a look through it.
 
 
 ### Starters (Completed Tasks)
@@ -40,4 +41,15 @@ You will earn Bonus Points if you complete any or all of the following tasks:
 4. Include a search bar that allows users to search for specific questions by keywords or category titles. (20 points)
 5. Create a progress bar that tracks the user's completion rate of answered questions. (30 points)
 6. Allow users to create a new category and add a question under any category. Ensure this information is stored in the browser. (70 points)
+
+### Textual go through
+
+1. Search bar: When input is typed through searchbar, all relevant searches will be highlighted in yellow.
+2. FORM FOR ADDING NEW QUESTIONS IN A CATEGORY: In category number, add the number precedding the category name. For eg, if I want to add a question in '1. Learn The Basics", I would add 1 in category number. Add the respective details below it.
+3. FORM FOR ADDING NEW CATEGROY: Add category name in the input, and that category will be created in a new accordion.
+4. DARK MODE TOGGLE: A dark mode to light mode (and vice versa) button has been added at the top.
+5. PROGRESS BAR: It displays no. of questions solved along with percentage.
+6. KEYBOARD SHORTCUTS: Navigate next question by pressing 'n' and previous question by pressing 'p'.
+7. MARK QUESTION AS COMPLETED: Touch anywhere in the question area to mark it as completed. Completed questions will be highlighted in green.
+8. RESPONSIVE: The website has been made responsive by media queries
 
