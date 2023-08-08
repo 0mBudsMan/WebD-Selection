@@ -46,7 +46,7 @@ You will earn Bonus Points if you complete any or all of the following tasks:
 
 1. Search bar: When input is typed through searchbar, all relevant searches will be highlighted in yellow.
 2. FORM FOR ADDING NEW QUESTIONS IN A CATEGORY: In category number, add the number precedding the category name. For eg, if I want to add a question in '1. Learn The Basics", I would add 1 in category number. Add the respective details below it.
-3. FORM FOR ADDING NEW CATEGROY: Add category name in the input, and that category will be created in a new accordion.
+3. FORM FOR ADDING NEW CATEGORY: Add category name in the input, and that category will be created in a new accordion.
 4. DARK MODE TOGGLE: A dark mode to light mode (and vice versa) button has been added at the top.
 5. PROGRESS BAR: It displays no. of questions solved along with percentage.
 6. KEYBOARD SHORTCUTS: Navigate next question by pressing 'n' and previous question by pressing 'p'.
