@@ -66,6 +66,11 @@ header {
   color: var(--primary-color-font);
   font-size: 25px;
 }
+.title-font-form {
+  font-family: 'Roboto Mono', monospace;
+  color: var(--primary-color-font);
+  font-size: 25px;
+}
 
 
 * {
@@ -211,7 +216,7 @@ hr {
 
 .stronger {
   font-family: 'Open Sans', sans-serif;
-  font-size: 40px;
+  font-size: 30px;
 
 }
 
@@ -250,7 +255,12 @@ hr {
     font-size: 10px;
   }
   .formstyle{
-    width: 100%; margin: 0;
+    width: 80%; margin: auto;
+  }
+  .title-font-form {
+    font-family: 'Roboto Mono', monospace;
+    color: var(--primary-color-font);
+    font-size: 15px;
   }
 }
 

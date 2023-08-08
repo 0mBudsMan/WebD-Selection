@@ -1,104 +1,123 @@
 <!DOCTYPE html>
 <htm lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Geek DSA Sheet</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto+Mono&display=swap"
-        rel="stylesheet">
-</head>
-<body>
-    <!-- Code Here -->
-    <header>
-        <div style="margin: 20px; padding-bottom: 50px;">
-            <div class="header">
-                <img class="logo" src="./images/gh.png"></img>
-            </div>
-            <div class="header-content">
-                <h1 class="title-font">GEEK-SHEET</h1>
-            </div>
-            <div class="profile">
-                <h1 class="rightt">Om's <a href="#"><i class="fa-brands fa-github" style=" color: white;
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Geek DSA Sheet</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto+Mono&display=swap"
+            rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- Code Here -->
+        <header>
+            <div style="margin: 20px; padding-bottom: 50px;">
+                <div class="header">
+                    <img class="logo" src="./images/gh.png"></img>
+                </div>
+                <div class="header-content">
+                    <h1 class="title-font">GEEK-SHEET</h1>
+                </div>
+                <div class="profile">
+                    <h1 class="rightt">Om's <a href="#"><i class="fa-brands fa-github" style=" color: white;
                 font-size: 15px;"></i></a></h1>
+                </div>
+                <div class="midd">
+                    <p><i class="fa-regular fa-sun fa-xl sunicon" style="color: #4674c3;"></i> </p>
+                </div>
             </div>
-            <div class="midd">
-                <p><i class="fa-regular fa-sun fa-xl sunicon" style="color: #4674c3;"></i> </p>
-            </div>
+        </header>
+
+        <div style="margin-left: 40px;">
+            <input id="searchbar" onkeyup="search_question()" type="text" name="search"
+                placeholder="Search Questions..">
+            <p class="instruction">The searches will be highlighted in yellow</p>
+
+            <p class="instruction">To navigate through questions: Press n for navigating to next question, press p for
+                navigating to previous question</p>
+            <br><br>
         </div>
-    </header>
 
-    <div style="margin-left: 40px;">
-        <input id="searchbar"  onkeyup="search_question()" type="text"
-                name="search" placeholder="Search Questions.."> <p class="instruction">The searches will be highlighted in yellow</p>
+        <div id="progressbar"></div>
 
-                <p class="instruction">To navigate through questions: Press n for navigating to next question, press p for navigating to previous question</p>
-    <br><br>
+        <div class="accordion">
+           
+        </div>
+      
+
+        <form action="submit" class="form formstyle">
+            <h1 class="title-font-form formh1" style="text-align: center;">FILL THE FORM FOR ADDING NEW QUESTIONS IN ANY
+                CATEGORY</h1>
+            <input type="text" id="category_num" name="category_num" placeholder="Number?" class="styleinput">
+
+            <label for="category_num" class="stylelabel">
+                <p class="formp">Enter category number (The number precedding the category name)</p>
+            </label><br>
+
+            <input type="text" id="question_name" name="question_name" placeholder="Question name?" class="styleinput">
+
+            <label for="question_name" class="stylelabel">
+                <p class="formp">Enter name of question you want to add in this category</p>
+            </label><br>
+
+            <input type="text" id="tags" name="tags" placeholder="Tags?" class="styleinput">
+
+            <label for="tags" class="stylelabel">
+                <p class="formp">Enter tags</p>
+            </label><br>
+
+
+            <input type="text" id="youtube_link" name="youtube_link" placeholder="YouTube link?" class="styleinput">
+
+            <label for="youtube_link" class="stylelabel">
+                <p class="formp">Enter YouTube link</p>
+            </label><br>
+
+            <input type="text" id="platform_link" name="platform_link" placeholder="Problem link?" class="styleinput">
+
+            <label for="platform_link" class="stylelabel">
+                <p class="formp">Platform link</p>
+            </label>
+            <div style="text-align: center;">
+
+                <button type="submit" class="submit button-style">Submit</button>
             </div>
 
-    <div id="progressbar"></div>
+        </form>
+        <hr>
+        <br>
+        <br>
 
-    <div class="accordion">
-       
-    </div>
+        <form action="submit" class="form formstyle">
+            <h1 class="title-font-form formh1" style="text-align: center;">FILL THE FORM FOR ADDING NEW CATEGORY</h1>
+            <input type="text" id="category" name="category" placeholder="Cateogry?" class="styleinput">
 
-    <form action="submit" class="form formstyle">   
-        <h1 class="title-font formh1" style="text-align: center;">FILL THE FORM FOR ADDING NEW QUESTIONS IN ANY CATEGORY</h1>
-        <input type="text" id="category_num" name="category_num" placeholder="Number?" class="styleinput">
-        
-        <label for="category_num" class="stylelabel"><p class="formp">Enter category number (The number precedding the category name)</p></label><br>
-       
-        <input type="text" id="question_name" name="question_name" placeholder="Question name?" class="styleinput">
-        
-        <label for="question_name" class="stylelabel"><p class="formp">Enter name of question you want to add in this category</p></label><br>
-        
-         <input type="text" id="tags" name="tags" placeholder="Tags?" class="styleinput">
-        
-        <label for="tags" class="stylelabel"><p class="formp">Enter tags</p></label><br>
-        
-        
-        <input type="text" id="youtube_link" name="youtube_link" placeholder="YouTube link?" class="styleinput">
-        
-        <label for="youtube_link" class="stylelabel"><p class="formp">Enter YouTube link</p></label><br>
-        
-        <input type="text" id="platform_link" name="platform_link" placeholder="Problem link?" class="styleinput">
-        
-        <label for="platform_link" class="stylelabel"><p class="formp">Platform link</p></label>
-        <div style="text-align: center;">
-
-        <button type="submit" class="submit button-style">Submit</button></div>
-       
-      </form>
-      <hr>
-      <br>
-      <br>
-
-      <form action="submit" class="form formstyle">   
-        <h1 class="title-font formh1" style="text-align: center;">FILL THE FORM FOR ADDING NEW CATEGORY</h1>
-        <input type="text" id="category" name="category" placeholder="Cateogry?" class="styleinput">
-        
-        <label for="category_num" class="stylelabel"><p class="formp">Enter category name </p></label><br>
-       
-       
-        
-        <div style="text-align: center;">
-
-        <button type="submit" class="submitcategory button-style">Submit</button></div>
-       
-      </form>
-
-   
-    
+            <label for="category_num" class="stylelabel">
+                <p class="formp">Enter category name </p>
+            </label><br>
 
 
-    <script src="script.js"></script>
+
+            <div style="text-align: center;">
+
+                <button type="submit" class="submitcategory button-style">Submit</button>
+            </div>
+
+        </form>
+
+
+
+
+
+        <script src="script.js"></script>
 
     </body>
 
-</html>
+    </html>

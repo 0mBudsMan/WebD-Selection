@@ -174,6 +174,7 @@ fetchQuestionDetailsJSON().then(listofques => {
  })
  const progbar = document.createElement('h1');
    progbar.classList.add('toggle');
+
    
    const strifng = "Number of questions attempted: " + noofquestionsdone + " out of " + total;
    progbar.appendChild(document.createTextNode(strifng));
@@ -200,6 +201,7 @@ function search_question() {
 
 function progress_bar(){
    noofquestionsdone=0;
+  
    var inpt = document.getElementsByClassName('forprogressbar');
   for(var i=0;i<inpt.length;i++){
    if(inpt[i].checked) {noofquestionsdone++;}}
@@ -207,7 +209,8 @@ function progress_bar(){
       const progbar = document.createElement('h1');
 progbar.classList.add('toggle');
 const percentage = noofquestionsdone/total * 100;
-const strifng = "Number of questions attempted: " + noofquestionsdone + " out of " + total + " ("+percentage+"% )";
+const total_including_new = total+numberofnewquestions;
+const strifng = "Number of questions attempted: " + noofquestionsdone + " out of " + total_including_new + " ("+percentage+"% )";
 progbar.appendChild(document.createTextNode(strifng));
 document.getElementById('progressbar').appendChild(progbar);
 
@@ -247,6 +250,9 @@ document.addEventListener('keyup', (e)=>{
 })
 
 //for adding new questions in selected category
+var numberofnewquestions=0; //no of new questions added
+
+
 const submitbtns= document.getElementsByClassName('submit');
 if(submitbtns.length!=0){
    const btn = submitbtns[0];
@@ -266,6 +272,7 @@ btn.addEventListener('click', (e) => {
   const orderlistitems=document.getElementsByName('faq-'+category_num);
   if(orderlistitems.length!=0){
    const ol = orderlistitems[0];
+   numberofnewquestions++;
    
      
       const li = document.createElement('li');
@@ -273,9 +280,9 @@ btn.addEventListener('click', (e) => {
       strongg.appendChild(document.createTextNode(question_name));
       const inpu = document.createElement('input');
       inpu.classList.add('forprogressbar')
-      inpu.setAttribute('type', 'checkbox'); inpu.setAttribute('id', 'newques-'+category_num); 
+      inpu.setAttribute('type', 'checkbox'); inpu.setAttribute('id', 'newques-'+numberofnewquestions); 
       inpu.setAttribute('onclick', 'progress_bar()');
-      const labe = document.createElement('label'); labe.setAttribute('for','newques-'+category_num);
+      const labe = document.createElement('label'); labe.setAttribute('for','newques-'+numberofnewquestions);
       li.appendChild(inpu);
       li.appendChild(labe);
       labe.appendChild(strongg);
@@ -327,7 +334,7 @@ btn.addEventListener('click', (e) => {
    alert("Enter Valid Category Number")
   }
 
-  
+  //total+=numberofnewquestions;
 
 })};
 
