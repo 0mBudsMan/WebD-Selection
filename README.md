@@ -28,6 +28,8 @@ All tasks here are compulsory.
 3. Use the category title as the accordion heading, and the questions should expand on clicking the title.
 4. Ensure your website is responsive for a larger dataset. We will change the amount of questions and topics in the API during testing.
 
+
+
 ### Dessert (Completed Tasks)
 
 You will earn Bonus Points if you complete any or all of the following tasks:
@@ -36,5 +38,6 @@ You will earn Bonus Points if you complete any or all of the following tasks:
 2. Implement a dark mode toggle button to enhance the user experience. (20 points)
 3. Add keyboard shortcuts to navigate through questions easily (e.g., arrow keys). (20 points)
 4. Include a search bar that allows users to search for specific questions by keywords or category titles. (20 points)
+5. Create a progress bar that tracks the user's completion rate of answered questions. (30 points)
+6. Allow users to create a new category and add a question under any category. Ensure this information is stored in the browser. (70 points)
 
-6. Create a progress bar that tracks the user's completion rate of answered questions. (30 points)
